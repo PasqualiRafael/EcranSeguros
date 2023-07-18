@@ -1,0 +1,54 @@
+.container-banner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+
+    width: auto;
+    height: 600px;
+
+    background-color: $--clr-banner;
+}
+
+.wrapper-banner {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    width: 1440px;
+    height: 600px;
+
+    background-color: $--clr-banner;
+
+    // img {
+    //     width: 50%;
+    // }
+
+    .banner-text {
+        display: flex;
+        flex-direction: column;
+        align-items: left;
+        justify-content: center;
+
+        gap: 50px;
+        width: 700px;
+        height: 442px;
+
+        color: $--clr-font-2;
+        h1 {
+            font-family: $--font-primary;
+            font-size: 32px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: normal;
+        }
+
+        p {
+            font-family: $--font-secondary;
+            font-size: 24px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+        }
+    }
+}

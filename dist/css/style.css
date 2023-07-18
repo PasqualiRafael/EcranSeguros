@@ -1,0 +1,431 @@
+/*
+This file is used to contain all abstract imports.
+Files inside this folder can contain global styles used in the project.
+*/
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Open+Sans:ital@0;1&display=swap"); /*
+This file is used to contain all base imports.
+Files inside this folder can contain global styles used in the project.
+*/
+/* http://meyerweb.com/eric/tools/css/reset/ 
+  v2.0 | 20110126
+  License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+body header {
+  font-family: --font-secondary;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 16px;
+  line-height: 22px;
+  width: auto;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+.hidden {
+  display: none;
+}
+
+.show {
+  display: block;
+}
+
+/*
+This file is used to contain all components imports.
+Files inside this folder can contain global styles used in the project.
+*/
+.container-nav {
+  display: flex;
+  align-items: center;
+  margin: 0 auto;
+  height: auto;
+  background: #bfbbbb;
+}
+
+.wrapper-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+  padding: 16px 42px;
+  width: 1440px;
+  background: #bfbbbb;
+}
+.wrapper-nav .nav-container {
+  display: flex;
+  align-items: center;
+}
+.wrapper-nav .nav-container .nav-list {
+  display: flex;
+  align-items: center;
+  gap: 1.25rem;
+  height: 3.6875rem;
+}
+.wrapper-nav .nav-container .nav-list li > a {
+  font-family: "Inter", sans-serif;
+  font-size: 2rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-decoration-line: underline;
+  color: #1d1d1d;
+}
+
+.popup {
+  position: fixed;
+  width: auto;
+  height: auto;
+  bottom: 40px;
+  right: 25px;
+  z-index: 1000;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  width: auto;
+  height: 131px;
+  background-color: #635d5d;
+}
+.container .wrapper {
+  width: 1440px;
+  height: 131px;
+  background-color: #635d5d;
+}
+
+.wrapper-footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 103px;
+}
+.wrapper-footer .footer-text {
+  text-align: center;
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  color: #ffffff;
+}
+.wrapper-footer .social-icons {
+  display: flex;
+  flex-direction: row;
+}
+
+/*
+This file is used to contain all layouts imports.
+Files inside this folder can contain global styles used in the project.
+*/
+.container-banner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  width: auto;
+  height: 600px;
+  background-color: #4b5664;
+}
+
+.wrapper-banner {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 1440px;
+  height: 600px;
+  background-color: #4b5664;
+}
+.wrapper-banner .banner-text {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  justify-content: center;
+  gap: 50px;
+  width: 700px;
+  height: 442px;
+  color: #ffffff;
+}
+.wrapper-banner .banner-text h1 {
+  font-family: "Inter", sans-serif;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+.wrapper-banner .banner-text p {
+  font-family: "Open Sans", sans-serif;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.container-about {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  width: auto;
+  height: 600px;
+  background-color: #ada7a7;
+}
+
+.wrapper-about {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 52px;
+  width: 1440px;
+  height: 600px;
+  background-color: #ada7a7;
+}
+.wrapper-about h2 {
+  display: flex;
+  text-align: center;
+  font-family: "Inter", sans-serif;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  text-decoration-line: underline;
+  color: #1d1d1d;
+}
+.wrapper-about p {
+  width: 733px;
+  height: 433px;
+  text-align: center;
+  font-family: "Open Sans", sans-serif;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  color: #1d1d1d;
+}
+
+.container-parceiros {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  width: auto;
+  height: 700px;
+  background-color: #bfbbbb;
+}
+
+.wrapper-parceiros {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 1037px;
+  height: auto;
+  gap: 121px;
+  background-color: #bfbbbb;
+}
+.wrapper-parceiros h2 {
+  text-align: center;
+  font-family: "Inter", sans-serif;
+  font-size: 2rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  text-decoration-line: underline;
+  color: #1d1d1d;
+}
+.wrapper-parceiros ul {
+  display: flex;
+  width: 1037px;
+  align-items: flex-start;
+  align-content: flex-start;
+  gap: 64px 79px;
+  flex-wrap: wrap;
+}
+
+.container-info {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  width: auto;
+  height: 600px;
+  background-color: #ada7a7;
+}
+
+.wrapper-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 1440px;
+  height: 600px;
+  gap: 45px;
+  background-color: #ada7a7;
+}
+.wrapper-info h2 {
+  text-align: center;
+  font-family: "Inter", sans-serif;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  color: #1d1d1d;
+}
+.wrapper-info .info-map {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 105px;
+}
+
+.list-info-title {
+  margin-top: 20px;
+  font-family: "Inter", sans-serif;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  color: #1d1d1d;
+}
+
+.list-info {
+  font-family: "Open Sans", sans-serif;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  color: #1d1d1d;
+}/*# sourceMappingURL=style.css.map */

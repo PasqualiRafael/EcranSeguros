@@ -1,0 +1,26 @@
+@include section-default($--clr-tertiary, $--clr-tertiary, $--width, 131px);
+
+.wrapper-footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    gap: 103px;
+
+    .footer-text {
+        text-align: center;
+        font-family: $--font-secondary;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+
+        color: $--clr-font-2;
+    }
+
+    .social-icons {
+        display: flex;
+        flex-direction: row;
+    }
+}
