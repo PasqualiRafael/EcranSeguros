@@ -1,12 +1,26 @@
-@include section-default($--clr-tertiary, $--clr-tertiary, $--width, 131px);
+.container-footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
 
+    width: auto;
+    height: 131px;
+
+    background-color: $--clr-tertiary;
+}
 .wrapper-footer {
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
 
+    width: $--width;
+    height: auto;
+
     gap: 103px;
+
+    background-color: $--clr-tertiary;
 
     .footer-text {
         text-align: center;

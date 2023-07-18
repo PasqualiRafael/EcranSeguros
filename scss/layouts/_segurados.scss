@@ -1,0 +1,63 @@
+.container-segurados {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+
+    width: auto;
+    height: 887px;
+
+    background-color: $--clr-alternative-1;
+}
+
+.wrapper-segurados {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    width: 631px;
+    height: auto;
+
+    background-color: $--clr-alternative-1;
+
+    gap: 2rem;
+    margin-top: 4rem;
+    margin-bottom: 2rem;
+
+    h2 {
+        text-align: center;
+
+        font-family: $--font-primary;
+        font-size: 2rem;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+
+        color: $--clr-font;
+    }
+
+    p {
+        text-align: center;
+        font-family: $--font-secondary;
+        font-size: 1rem;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+
+        color: $--clr-font;
+    }
+
+    .download-app {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        gap: 93px;
+    }
+}
+
+.qrcode-img {
+    width: 512px;
+    margin: 0 47.83px;
+    height: 512px;
+}

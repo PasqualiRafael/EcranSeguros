@@ -210,17 +210,12 @@ Files inside this folder can contain global styles used in the project.
   z-index: 1000;
 }
 
-.container {
+.container-footer {
   display: flex;
   justify-content: center;
   align-items: center;
   margin: 0 auto;
   width: auto;
-  height: 131px;
-  background-color: #635d5d;
-}
-.container .wrapper {
-  width: 1440px;
   height: 131px;
   background-color: #635d5d;
 }
@@ -230,7 +225,10 @@ Files inside this folder can contain global styles used in the project.
   flex-direction: row;
   justify-content: center;
   align-items: center;
+  width: 1440px;
+  height: auto;
   gap: 103px;
+  background-color: #635d5d;
 }
 .wrapper-footer .footer-text {
   text-align: center;
@@ -428,4 +426,57 @@ Files inside this folder can contain global styles used in the project.
   font-weight: 400;
   line-height: normal;
   color: #1d1d1d;
+}
+
+.container-segurados {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  width: auto;
+  height: 887px;
+  background-color: #f1e6e6;
+}
+
+.wrapper-segurados {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 631px;
+  height: auto;
+  background-color: #f1e6e6;
+  gap: 2rem;
+  margin-top: 4rem;
+  margin-bottom: 2rem;
+}
+.wrapper-segurados h2 {
+  text-align: center;
+  font-family: "Inter", sans-serif;
+  font-size: 2rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  color: #1d1d1d;
+}
+.wrapper-segurados p {
+  text-align: center;
+  font-family: "Open Sans", sans-serif;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  color: #1d1d1d;
+}
+.wrapper-segurados .download-app {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 93px;
+}
+
+.qrcode-img {
+  width: 512px;
+  margin: 0 47.83px;
+  height: 512px;
 }/*# sourceMappingURL=style.css.map */
