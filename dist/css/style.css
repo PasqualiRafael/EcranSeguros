@@ -206,7 +206,7 @@ Files inside this folder can contain global styles used in the project.
   width: auto;
   height: auto;
   bottom: 40px;
-  right: 25px;
+  left: 25px;
   z-index: 1000;
 }
 
