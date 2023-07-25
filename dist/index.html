@@ -17,18 +17,28 @@
                     /></a>
                     <nav class="nav-container">
                         <ul class="nav-list">
-                            <li><a href="index.html">Home</a></li>
+                            <li>
+                                <a href="index.html" class="nav-title">Home</a>
+                            </li>
                             <li class="dropdown">
-                                <a href="#">Seguros</a>
-                                <ul class="dropdown-content">
+                                <a
+                                    class="nav-title dropbtn"
+                                    onclick="dropdown_menu(this)"
+                                >
+                                    Seguros
+                                </a>
+                                <ul
+                                    id="dropdown-seguros"
+                                    class="dropdown-content"
+                                >
                                     <li>
-                                        <a href="#" class="hidden dropdown-cat"
-                                            ><img
+                                        <a href="#" class="dropdown-cat">
+                                            <img
                                                 src="img/seta-esquerda.svg"
                                                 alt="icone de seta"
                                             />Solicite sua Cotação</a
                                         >
-                                        <ul class="hidden dropdown-subcateg">
+                                        <ul class="dropdown-subcategoria">
                                             <li><a href="#">Empresa</a></li>
                                             <li><a href="#">Condominio</a></li>
                                             <li><a href="#">Bike</a></li>
@@ -36,13 +46,15 @@
                                         </ul>
                                     </li>
                                     <li>
-                                        <a href="#" class="hidden"
+                                        <a href="#" class="dropdown-cat"
                                             ><img
                                                 src="img/seta-esquerda.svg"
                                                 alt="icone de seta"
-                                            />Contrate agora seu seguro</a
+                                            />Contrate seu Seguro</a
                                         >
-                                        <ul class="hidden dropdown-subcateg">
+                                        <ul
+                                            class="hidden dropdown-subcategoria"
+                                        >
                                             <li><a href="#">Viagem</a></li>
                                             <li><a href="#">Auto Mensal</a></li>
                                             <li><a href="#">Celular</a></li>
@@ -53,11 +65,18 @@
                                     </li>
                                 </ul>
                             </li>
-                            <li>
-                                <a href="#">Sinistros</a>
-                                <ul class="dropdown-content">
+                            <li class="dropdown">
+                                <a
+                                    class="nav-title dropbtn"
+                                    onclick="dropdown_menu(this)"
+                                    >Sinistros</a
+                                >
+                                <ul
+                                    id="dropdown-sinistros"
+                                    class="dropdown-content"
+                                >
                                     <li>
-                                        <a href="#" class="hidden"
+                                        <a href="#" class="dropdown-cat"
                                             ><img
                                                 src="img/seta-esquerda.svg"
                                                 alt="icone de seta"
@@ -83,7 +102,9 @@
                                 </ul>
                             </li>
                             <li>
-                                <a href="segurado.html">Área do Segurado</a>
+                                <a href="segurado.html" class="nav-title"
+                                    >Área do Segurado</a
+                                >
                             </li>
                         </ul>
                     </nav>
@@ -123,7 +144,7 @@
                         A motivação por trás desta importante decisão, consistiu
                         na determinação de atender a demanda dos Seguros de modo
                         mais efetivo e diferente do que o mercado faz desde a
-                        década de 1960.<br />
+                        década de 60.<br />
                         Inspirado em um modelo de venda consultiva. O foco da
                         Ecran nunca foi na quantidade de clientes e Sim na
                         qualidade das apólices bem elaboradas e que atendam
@@ -309,6 +330,7 @@
                 visible: true,
             });
         </script>
+        <script src="js/app.js"></script>
         <!-- End Robocote Code -->
     </body>
 </html>
