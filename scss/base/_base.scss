@@ -18,3 +18,18 @@ body header {
 .show {
     display: flex !important;
 }
+
+.font-on-nav-categoria {
+    font-family: $--font-primary;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    text-decoration: none;
+
+    margin: 8px 15px;
+    color: $--clr-black;
+    &:hover {
+        color: $--clr-hover;
+    }
+}
