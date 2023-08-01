@@ -5,7 +5,7 @@
     margin: 0 auto;
 
     width: auto;
-    height: 600px;
+    height: auto;
 
     background-color: $--clr-banner;
 }
@@ -16,13 +16,17 @@
     align-items: center;
 
     width: 1440px;
-    height: 600px;
+    height: auto;
 
     background-color: $--clr-banner;
 
     // img {
     //     width: 50%;
     // }
+
+    img {
+        width: 50%;
+    }
 
     .banner-text {
         display: flex;
@@ -31,7 +35,7 @@
         justify-content: center;
 
         gap: 50px;
-        width: 700px;
+        width: 50%;
         height: 442px;
 
         color: $--clr-font-2;
@@ -49,6 +53,23 @@
             font-style: normal;
             font-weight: 400;
             line-height: normal;
+        }
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+    .wrapper-banner {
+        background-image: url("../img/banner-ecran-room.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+
+        img {
+            display: none;
+        }
+
+        .banner-text {
+            margin-left: 10%;
+            width: 80%;
         }
     }
 }
