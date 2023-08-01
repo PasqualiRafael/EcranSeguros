@@ -398,8 +398,8 @@ Files inside this folder can contain global styles used in the project.
   color: #1d1d1d;
 }
 .wrapper-about p {
-  width: 733px;
-  height: 433px;
+  width: 753px;
+  height: auto;
   text-align: center;
   font-family: "Open Sans", sans-serif;
   font-size: 24px;
@@ -407,6 +407,9 @@ Files inside this folder can contain global styles used in the project.
   font-weight: 600;
   line-height: normal;
   color: #1d1d1d;
+}
+.wrapper-about p #strong-text {
+  font-style: italic;
 }
 
 .container-parceiros {

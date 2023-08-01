@@ -38,8 +38,8 @@
     }
 
     p {
-        width: 733px;
-        height: 433px;
+        width: 753px;
+        height: auto;
 
         text-align: center;
 
@@ -49,5 +49,9 @@
         font-weight: 600;
         line-height: normal;
         color: $--clr-font;
+
+        #strong-text {
+            font-style: italic;
+        }
     }
 }
