@@ -389,7 +389,7 @@ Files inside this folder can contain global styles used in the project.
   align-items: center;
   margin: 0 auto;
   width: auto;
-  height: auto;
+  height: 700px;
   background-color: #ada7a7;
 }
 
@@ -399,8 +399,8 @@ Files inside this folder can contain global styles used in the project.
   align-items: center;
   justify-content: center;
   gap: 52px;
-  width: 1440px;
-  height: 1000px;
+  width: auto;
+  height: 700px;
   background-color: #ada7a7;
 }
 .wrapper-about h2 {
@@ -419,7 +419,7 @@ Files inside this folder can contain global styles used in the project.
   height: auto;
   text-align: center;
   font-family: "Open Sans", sans-serif;
-  font-size: 24px;
+  font-size: 22px;
   font-style: normal;
   font-weight: 600;
   line-height: normal;
