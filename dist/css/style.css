@@ -356,14 +356,14 @@ Files inside this folder can contain global styles used in the project.
 }
 .wrapper-banner .banner-text h1 {
   font-family: "Inter", sans-serif;
-  font-size: 32px;
+  font-size: 28px;
   font-style: normal;
   font-weight: 700;
   line-height: normal;
 }
 .wrapper-banner .banner-text p {
   font-family: "Open Sans", sans-serif;
-  font-size: 24px;
+  font-size: 22px;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
