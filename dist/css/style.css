@@ -389,7 +389,7 @@ Files inside this folder can contain global styles used in the project.
   align-items: center;
   margin: 0 auto;
   width: auto;
-  height: 600px;
+  height: auto;
   background-color: #ada7a7;
 }
 
@@ -400,7 +400,7 @@ Files inside this folder can contain global styles used in the project.
   justify-content: center;
   gap: 52px;
   width: 1440px;
-  height: 600px;
+  height: 1000px;
   background-color: #ada7a7;
 }
 .wrapper-about h2 {

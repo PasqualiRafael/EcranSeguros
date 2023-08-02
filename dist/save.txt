@@ -1,0 +1,12 @@
+                    <p>
+                        A Ecran Corretora, estabelecida em junho de 2012, é uma
+                        história de sucesso conjunta entre os experientes
+                        corretores,<br /><i id="strong-text"
+                            >Fernando Pasquali e Monica Gatto</i
+                        >, protegendo <br />suas conquistas. <br />
+                        Com uma rica trajetória no mercado de seguros, Fernando
+                        desde 1986 e Monica desde 1995, eles uniram forças com
+                        um objetivo claro: atender à demanda por seguros de
+                        forma inovadora e eficiente, superando as práticas
+                        tradicionais que persistem desde a década de 60.
+                    </p>
