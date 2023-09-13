@@ -2,7 +2,7 @@ body header {
     font-family: --font-secondary;
     font-weight: 400;
     font-style: normal;
-    font-size: 16px;
+    font-size: $--font-16rem;
     line-height: 22px;
 
     width: auto;
@@ -21,7 +21,7 @@ body header {
 
 .font-on-nav-categoria {
     font-family: $--font-primary;
-    font-size: 22px;
+    font-size: $--font-22rem;
     font-style: normal;
     font-weight: 600;
     line-height: normal;

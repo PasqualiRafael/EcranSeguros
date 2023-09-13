@@ -4,8 +4,7 @@
     align-items: center;
     margin: 0 auto;
 
-    width: auto;
-    height: 887px;
+    width: 100%;
 
     background-color: $--clr-alternative-1;
 }
@@ -16,14 +15,12 @@
     justify-content: center;
     align-items: center;
 
-    width: 631px;
-    height: auto;
+    width: 100%;
 
     background-color: $--clr-alternative-1;
 
     gap: 2rem;
-    margin-top: 4rem;
-    margin-bottom: 2rem;
+    margin: 4rem 0 2rem 0;
 
     h2 {
         text-align: center;
@@ -40,7 +37,7 @@
     p {
         text-align: center;
         font-family: $--font-secondary;
-        font-size: 1rem;
+        font-size: $--font-16rem;
         font-style: normal;
         font-weight: 400;
         line-height: normal;
@@ -60,4 +57,23 @@
     width: 512px;
     margin: 0 47.83px;
     height: 512px;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+}
+
+@media screen and (max-width: 767px) {
+    .wrapper-segurados {
+        .download-app {
+            display: flex;
+            flex-direction: column;
+            gap: 2rem;
+        }
+    }
+
+    .qrcode-img {
+        width: 90%;
+        margin: 0 47.83px;
+        height: 90%;
+    }
 }

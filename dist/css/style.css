@@ -2,7 +2,8 @@
 This file is used to contain all abstract imports.
 Files inside this folder can contain global styles used in the project.
 */
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Open+Sans:ital@0;1&display=swap"); /*
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Open+Sans:ital@0;1&display=swap");
+/*
 This file is used to contain all base imports.
 Files inside this folder can contain global styles used in the project.
 */
@@ -145,7 +146,7 @@ body header {
   font-family: --font-secondary;
   font-weight: 400;
   font-style: normal;
-  font-size: 16px;
+  font-size: 1rem;
   line-height: 22px;
   width: auto;
   margin: 0 auto;
@@ -162,7 +163,7 @@ body header {
 
 .font-on-nav-categoria {
   font-family: "Inter", sans-serif;
-  font-size: 22px;
+  font-size: 1.375rem;
   font-style: normal;
   font-weight: 600;
   line-height: normal;
@@ -192,7 +193,7 @@ Files inside this folder can contain global styles used in the project.
   align-items: center;
   margin: 0 auto;
   padding: 1rem 2.625rem;
-  width: 1440px;
+  width: 100%;
   background: #bfbbbb;
 }
 .wrapper-nav .nav-container {
@@ -202,12 +203,12 @@ Files inside this folder can contain global styles used in the project.
 .wrapper-nav .nav-container .nav-list {
   display: flex;
   align-items: center;
-  gap: 1.25rem;
-  height: 3.6875rem;
+  gap: 1rem;
+  height: 1.75rem;
 }
 .wrapper-nav .nav-container .nav-list .nav-title {
   font-family: "Inter", sans-serif;
-  font-size: 2rem;
+  font-size: 2.25rem;
   font-style: normal;
   font-weight: 700;
   line-height: normal;
@@ -276,12 +277,22 @@ Files inside this folder can contain global styles used in the project.
   background: #ffffff;
 }
 
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .wrapper-nav .nav-container {
+    display: none;
+  }
+}
+@media screen and (max-width: 767px) {
+  .wrapper-nav .nav-container {
+    display: none;
+  }
+}
 .popup {
   position: fixed;
   width: auto;
   height: auto;
-  bottom: 30px;
-  left: 25px;
+  bottom: 15px;
+  left: 15px;
   z-index: 1000;
 }
 
@@ -308,17 +319,44 @@ Files inside this folder can contain global styles used in the project.
 .wrapper-footer .footer-text {
   text-align: center;
   font-family: "Open Sans", sans-serif;
-  font-size: 16px;
+  font-size: 1rem;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
   color: #ffffff;
+}
+.wrapper-footer .footer-text a {
+  color: #ffffff;
+  text-decoration: none;
 }
 .wrapper-footer .social-icons {
   display: flex;
   flex-direction: row;
 }
 
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .wrapper-footer {
+    display: block;
+  }
+  .wrapper-footer .footer-text {
+    font-size: 0.875rem;
+  }
+  .wrapper-footer img {
+    display: none;
+  }
+}
+@media screen and (max-width: 767px) {
+  .wrapper-footer {
+    display: block;
+    width: 90%;
+  }
+  .wrapper-footer .footer-text {
+    font-size: 0.75rem;
+  }
+  .wrapper-footer img {
+    display: none;
+  }
+}
 /*
 This file is used to contain all layouts imports.
 Files inside this folder can contain global styles used in the project.
@@ -356,20 +394,20 @@ Files inside this folder can contain global styles used in the project.
 }
 .wrapper-banner .banner-text h1 {
   font-family: "Inter", sans-serif;
-  font-size: 28px;
+  font-size: 1.75rem;
   font-style: normal;
   font-weight: 700;
   line-height: normal;
 }
 .wrapper-banner .banner-text p {
   font-family: "Open Sans", sans-serif;
-  font-size: 22px;
+  font-size: 1.375rem;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
 }
 
-@media (min-width: 768px) and (max-width: 1023px) {
+@media screen and (min-width: 768px) and (max-width: 1023px) {
   .wrapper-banner {
     background-image: url("../img/banner-ecran-room.png");
     background-repeat: no-repeat;
@@ -383,13 +421,28 @@ Files inside this folder can contain global styles used in the project.
     width: 80%;
   }
 }
+@media screen and (max-width: 767px) {
+  .wrapper-banner img {
+    display: none;
+  }
+  .wrapper-banner .banner-text {
+    margin-left: 10%;
+    width: 80%;
+  }
+  .wrapper-banner .banner-text h1 {
+    font-size: 1.375rem;
+  }
+  .wrapper-banner .banner-text p {
+    font-size: 1.25rem;
+  }
+}
 .container-about {
   display: flex;
   justify-content: center;
   align-items: center;
   margin: 0 auto;
-  width: auto;
-  height: 700px;
+  width: 100%;
+  min-height: 600px;
   background-color: #ada7a7;
 }
 
@@ -399,15 +452,15 @@ Files inside this folder can contain global styles used in the project.
   align-items: center;
   justify-content: center;
   gap: 52px;
-  width: auto;
-  height: 700px;
+  width: 100%;
+  min-height: 600px;
   background-color: #ada7a7;
 }
 .wrapper-about h2 {
   display: flex;
   text-align: center;
   font-family: "Inter", sans-serif;
-  font-size: 36px;
+  font-size: 2.25rem;
   font-style: normal;
   font-weight: 600;
   line-height: normal;
@@ -415,11 +468,11 @@ Files inside this folder can contain global styles used in the project.
   color: #1d1d1d;
 }
 .wrapper-about p {
-  width: 753px;
+  width: 60%;
   height: auto;
   text-align: center;
   font-family: "Open Sans", sans-serif;
-  font-size: 22px;
+  font-size: 1.375rem;
   font-style: normal;
   font-weight: 600;
   line-height: normal;
@@ -429,13 +482,43 @@ Files inside this folder can contain global styles used in the project.
   font-style: italic;
 }
 
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .container-about {
+    width: 100%;
+  }
+  .container-about .wrapper-about {
+    height: 80%;
+    margin: 2rem 0 2rem 0;
+  }
+  h2 {
+    font-size: 1.25rem;
+  }
+  p {
+    font-size: 1em;
+  }
+}
+@media screen and (max-width: 767px) {
+  .container-about {
+    width: 100%;
+  }
+  .container-about .wrapper-about {
+    width: 90%;
+    margin: 2rem 0 2rem 0;
+  }
+  .container-about .wrapper-about h2 {
+    font-size: 1.75rem;
+  }
+  .container-about .wrapper-about p {
+    width: 90%;
+    font-size: 1.125rem;
+  }
+}
 .container-parceiros {
   display: flex;
   justify-content: center;
   align-items: center;
   margin: 0 auto;
-  width: auto;
-  height: 700px;
+  width: 100%;
   background-color: #bfbbbb;
 }
 
@@ -444,8 +527,8 @@ Files inside this folder can contain global styles used in the project.
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  width: 1037px;
-  height: auto;
+  margin: 2rem 0 2rem 0;
+  width: 90%;
   gap: 121px;
   background-color: #bfbbbb;
 }
@@ -461,20 +544,50 @@ Files inside this folder can contain global styles used in the project.
 }
 .wrapper-parceiros ul {
   display: flex;
-  width: 1037px;
+  width: 90%;
   align-items: flex-start;
   align-content: flex-start;
   gap: 64px 79px;
   flex-wrap: wrap;
 }
 
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .wrapper-parceiros .parceiros-list {
+    display: grid;
+    padding: 1rem;
+    gap: 1rem;
+    grid-auto-flow: column;
+    grid-auto-columns: 40%;
+    overflow-x: scroll;
+    scroll-snap-type: x mandatory;
+    scroll-padding: 1rem;
+  }
+  .wrapper-parceiros .parceiros-list > * {
+    scroll-snap-align: start;
+  }
+}
+@media screen and (max-width: 767px) {
+  .wrapper-parceiros .parceiros-list {
+    display: grid;
+    padding: 1rem;
+    gap: 1rem;
+    grid-auto-flow: column;
+    grid-auto-columns: 70%;
+    overflow-x: scroll;
+    scroll-snap-type: x mandatory;
+    scroll-padding: 1rem;
+  }
+  .wrapper-parceiros .parceiros-list > * {
+    scroll-snap-align: start;
+  }
+}
 .container-info {
   display: flex;
   justify-content: center;
   align-items: center;
   margin: 0 auto;
-  width: auto;
-  height: 600px;
+  width: 100%;
+  min-height: 600px;
   background-color: #ada7a7;
 }
 
@@ -483,15 +596,15 @@ Files inside this folder can contain global styles used in the project.
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  width: 1440px;
-  height: 600px;
+  width: 100%;
+  min-height: 600px;
   gap: 45px;
   background-color: #ada7a7;
 }
 .wrapper-info h2 {
   text-align: center;
   font-family: "Inter", sans-serif;
-  font-size: 36px;
+  font-size: 2.25rem;
   font-style: normal;
   font-weight: 600;
   line-height: normal;
@@ -503,11 +616,14 @@ Files inside this folder can contain global styles used in the project.
   align-items: center;
   gap: 105px;
 }
+.wrapper-info iframe {
+  display: none;
+}
 
 .list-info-title {
   margin-top: 20px;
   font-family: "Inter", sans-serif;
-  font-size: 24px;
+  font-size: 1.5rem;
   font-style: normal;
   font-weight: 700;
   line-height: normal;
@@ -516,20 +632,43 @@ Files inside this folder can contain global styles used in the project.
 
 .list-info {
   font-family: "Open Sans", sans-serif;
-  font-size: 20px;
+  font-size: 1.25rem;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
   color: #1d1d1d;
 }
 
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .container-info {
+    min-height: auto;
+  }
+  .container-info .wrapper-info {
+    min-height: auto;
+    margin: 2rem 0 2rem 0;
+  }
+  .container-info iframe {
+    display: none;
+  }
+}
+@media screen and (max-width: 767px) {
+  .container-info {
+    min-height: auto;
+  }
+  .container-info .wrapper-info {
+    min-height: auto;
+    margin: 2rem 0 2rem 0;
+  }
+  .container-info iframe {
+    display: none;
+  }
+}
 .container-segurados {
   display: flex;
   justify-content: center;
   align-items: center;
   margin: 0 auto;
-  width: auto;
-  height: 887px;
+  width: 100%;
   background-color: #f1e6e6;
 }
 
@@ -538,12 +677,10 @@ Files inside this folder can contain global styles used in the project.
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 631px;
-  height: auto;
+  width: 100%;
   background-color: #f1e6e6;
   gap: 2rem;
-  margin-top: 4rem;
-  margin-bottom: 2rem;
+  margin: 4rem 0 2rem 0;
 }
 .wrapper-segurados h2 {
   text-align: center;
@@ -574,4 +711,17 @@ Files inside this folder can contain global styles used in the project.
   width: 512px;
   margin: 0 47.83px;
   height: 512px;
+}
+
+@media screen and (max-width: 767px) {
+  .wrapper-segurados .download-app {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+  .qrcode-img {
+    width: 90%;
+    margin: 0 47.83px;
+    height: 90%;
+  }
 }/*# sourceMappingURL=style.css.map */

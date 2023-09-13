@@ -1,4 +1,4 @@
-$--w: 1440px;
+$--w: 100%;
 
 .container-nav {
     display: flex;
@@ -30,13 +30,13 @@ $--w: 1440px;
             display: flex;
             align-items: center;
 
-            gap: 1.25rem;
+            gap: $--font-16rem;
 
-            height: 3.6875rem;
+            height: $--font-28rem;
 
             .nav-title {
                 font-family: $--font-primary;
-                font-size: 2rem;
+                font-size: $--font-36rem;
                 font-style: normal;
                 font-weight: 700;
                 line-height: normal;
@@ -114,4 +114,20 @@ $--w: 1440px;
 
     border-radius: 20px 0px 20px 20px;
     background: $--clr-white;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    .wrapper-nav {
+        .nav-container {
+            display: none;
+        }
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .wrapper-nav {
+        .nav-container {
+            display: none;
+        }
+    }
 }
