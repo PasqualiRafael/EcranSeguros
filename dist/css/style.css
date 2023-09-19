@@ -154,7 +154,7 @@ body header {
 }
 
 .hidden {
-  display: none;
+  display: none !important;
 }
 
 .show {
@@ -200,11 +200,20 @@ Files inside this folder can contain global styles used in the project.
   display: flex;
   align-items: center;
 }
+.wrapper-nav .nav-container .bx-menu,
+.wrapper-nav .nav-container .bx-x {
+  display: none;
+  font-size: 2.25rem;
+}
 .wrapper-nav .nav-container .nav-list {
   display: flex;
   align-items: center;
   gap: 1rem;
   height: 1.75rem;
+}
+.wrapper-nav .nav-container .nav-list .bx {
+  display: none;
+  font-size: 2.25rem;
 }
 .wrapper-nav .nav-container .nav-list .nav-title {
   font-family: "Inter", sans-serif;
@@ -217,7 +226,7 @@ Files inside this folder can contain global styles used in the project.
   cursor: pointer;
 }
 
-.dropdown {
+.nav-list > li {
   padding: 10px 0;
 }
 
@@ -278,7 +287,36 @@ Files inside this folder can contain global styles used in the project.
 }
 
 @media screen and (min-width: 768px) and (max-width: 1023px) {
-  .wrapper-nav .nav-container {
+  .wrapper-nav .nav-container .bx-menu {
+    display: block;
+  }
+  .wrapper-nav .nav-container .nav-list {
+    display: block;
+    width: 70%;
+    height: auto;
+    padding: 1rem;
+    background-color: #ffffff;
+    position: fixed;
+    top: 125px;
+    left: -100%;
+    transition: all 0.5s ease;
+  }
+  .wrapper-nav .nav-container .nav-list .bxs-chevron-down {
+    display: inline;
+    font-size: 1.75rem;
+  }
+  .wrapper-nav .nav-container .bx {
+    display: inline;
+    color: #1d1d1d;
+    cursor: pointer;
+  }
+  .wrapper-nav .nav-container .bx-x {
+    display: none;
+  }
+  .wrapper-nav .nav-container .dropdown .submenu > a > img {
+    display: none;
+  }
+  .wrapper-nav .nav-container .dropdown:hover > .dropdown-content {
     display: none;
   }
 }
@@ -616,9 +654,6 @@ Files inside this folder can contain global styles used in the project.
   align-items: center;
   gap: 105px;
 }
-.wrapper-info iframe {
-  display: none;
-}
 
 .list-info-title {
   margin-top: 20px;
@@ -647,9 +682,6 @@ Files inside this folder can contain global styles used in the project.
     min-height: auto;
     margin: 2rem 0 2rem 0;
   }
-  .container-info iframe {
-    display: none;
-  }
 }
 @media screen and (max-width: 767px) {
   .container-info {
@@ -658,9 +690,6 @@ Files inside this folder can contain global styles used in the project.
   .container-info .wrapper-info {
     min-height: auto;
     margin: 2rem 0 2rem 0;
-  }
-  .container-info iframe {
-    display: none;
   }
 }
 .container-segurados {

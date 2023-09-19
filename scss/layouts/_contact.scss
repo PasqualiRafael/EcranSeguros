@@ -39,9 +39,6 @@
         align-items: center;
         gap: 105px;
     }
-    iframe {
-        display: none;
-    }
 }
 
 .list-info-title {
@@ -72,9 +69,6 @@
             min-height: auto;
             margin: 2rem 0 2rem 0;
         }
-        iframe {
-            display: none;
-        }
     }
 }
 
@@ -84,9 +78,6 @@
         .wrapper-info {
             min-height: auto;
             margin: 2rem 0 2rem 0;
-        }
-        iframe {
-            display: none;
         }
     }
 }
